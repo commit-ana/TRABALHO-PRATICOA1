@@ -1,0 +1,28 @@
+{
+  "name": "trabalho-praticoa1",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de uma API REST utilizando Node.js e Express, aplicando os conceitos de API Rest, rotas, métodos HTTP, middlewares, versionamento com Git e documentação básica. O trabalho visa consolidar os conhecimentos sobre construção de backend, colaboração em equipe e uso de ferramentas de desenvolvimento.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commit-ana/TRABALHO-PRATICOA1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/commit-ana/TRABALHO-PRATICOA1/issues"
+  },
+  "homepage": "https://github.com/commit-ana/TRABALHO-PRATICOA1#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
