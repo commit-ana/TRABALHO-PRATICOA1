@@ -14,7 +14,9 @@ app.use((req, res, next) => {
 });
 
 //IMPORTAR E MAPEAR ROTAS
-
+// importar alunos
+const alunosRouter = require('./routes/alunos');
+app.use('/alunos', alunosRouter);
 
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
