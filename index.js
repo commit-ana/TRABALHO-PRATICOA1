@@ -17,6 +17,9 @@ app.use((req, res, next) => {
 // importar alunos
 const alunosRouter = require('./routes/alunos');
 app.use('/alunos', alunosRouter);
+// importar professores
+const professoresRouter = require('./routes/professores');
+app.use('/professores', professoresRouter);
 
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
