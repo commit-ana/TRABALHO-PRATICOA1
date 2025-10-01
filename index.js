@@ -14,9 +14,6 @@ app.use((req, res, next) => {
 });
 
 //IMPORTAR E MAPEAR ROTAS
-// importar alunos
-const alunosRouter = require('./routes/alunos');
-app.use('/alunos', alunosRouter);
 // importar professores
 const professoresRouter = require('./routes/professores');
 app.use('/professores', professoresRouter);
