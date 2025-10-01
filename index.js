@@ -14,9 +14,7 @@ app.use((req, res, next) => {
 });
 
 //IMPORTAR E MAPEAR ROTAS
-// importar professores
-const professoresRouter = require('./routes/professores');
-app.use('/professores', professoresRouter);
+
 
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
