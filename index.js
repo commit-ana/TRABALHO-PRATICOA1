@@ -21,6 +21,27 @@ app.use('/alunos', alunosRouter);
 const professoresRouter = require('./routes/professores');
 app.use('/professores', professoresRouter);
 
+// Importando livros
+const livrosRouter = require('./routes/livros');
+app.use('/livros', livrosRouter);
+
+// Importando bibliotecarios
+const bibliotecariosRouter = require('./routes/bibliotecarios');
+app.use('/bibliotecarios', bibliotecariosRouter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
 })
