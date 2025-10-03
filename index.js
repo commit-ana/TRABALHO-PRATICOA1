@@ -20,6 +20,9 @@ app.use('/alunos', alunosRouter);
 // importar professores
 const professoresRouter = require('./routes/professores');
 app.use('/professores', professoresRouter);
+// importar empréstimos
+const emprestimosRouter = require('./routes/empréstimo');
+app.use('/emprestimo', emprestimosRouter);
 
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
