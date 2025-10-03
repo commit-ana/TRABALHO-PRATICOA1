@@ -42,7 +42,7 @@ let ListaAlunos = [
 // Criar CRUD
 // - POST /alunos
 // CRUD ALUNOS - nome, matrícula, turma, email, turno
-router.post('/alunos', (req, res, next) => {
+router.post('/', (req, res, next) => {
   const { nome, matricula, email, turma, turno } = req.body
   // validar se os dados vinheram
   if (!nome || !matricula || !email || !turma || !turno) {

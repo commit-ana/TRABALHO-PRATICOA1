@@ -40,7 +40,7 @@ let ListaProfessores = [
 ]
 // Criar CRUD
 // CRUD PROFESSORES - nome, disciplina, email, matricula, turno
-router.post('/professores', (req, res, next) => {
+router.post('/', (req, res, next) => {
   const { nome, matricula, email, disciplina, turno } = req.body
   // validar se os dados vinheram
   if (!nome || !matricula || !email || !disciplina || !turno) {

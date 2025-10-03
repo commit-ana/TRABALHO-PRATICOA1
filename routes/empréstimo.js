@@ -7,8 +7,8 @@ const router = express.Router();
 let emprestimos = [
   { id: 1, aluno: "Luiza Eduarda", livro: "Construção de Backend", data: "2025-10-03", status: "emprestado" },
   { id: 2, aluno: "Luiz Gustavo", livro: "Banco de Dados Avançado", data: "2025-09-28", status: "devolvido" },
-  { id: 2, aluno: "Ana Carolina", livro: "Cisco CCNA", data: "2025-10-01", status: "emprestado" },
-  { id: 2, aluno: "Ana Clara", livro: "Dos 5", data: "2025-09-05", status: "atrasado" }
+  { id: 3, aluno: "Ana Carolina", livro: "Cisco CCNA", data: "2025-10-01", status: "emprestado" },
+  { id: 4, aluno: "Ana Clara", livro: "Dos 5", data: "2025-09-05", status: "atrasado" }
   
 ];
 
@@ -60,7 +60,7 @@ router.delete('/:id', (req, res) => {
   if (index === -1) return res.status(404).json({ erro: "Empréstimo não encontrado" });
 
   emprestimos.splice(index, 1);
-  res.status(204).send();
+  res.json({ message: "Excluído com sucesso!!!"})
 });
 
 module.exports = router;
